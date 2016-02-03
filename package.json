@@ -1,12 +1,31 @@
 {
   "name": "agnium-adventure",
-  "version": "0.0.1",
-  "private": true,
-  "description": "New Swagger API Project",
-  "keywords": [],
-  "author": "",
-  "license": "",
+  "version": "0.1.1",
+  "private": false,
+  "description": "Agnium Adventure with Hapi and Swagger API",
+  "keywords": [
+    "agnium",
+    "hapi",
+    "adventure",
+    "nodejs",
+    "javascript",
+    "api"
+  ],
+  "author": "Agnium Trainer <trainer@agnium.co.id>",
+  "license": "MIT",
   "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test"
+  },
+  "homepage": "http://adventure.agnium.co.id",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/agnium-academy/agnium-hapi-adventure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agnium-trainer/agnium-hapi-adventure/issues"
+  },
   "dependencies": {
     "hapi": "^10.0.0",
     "swagger-hapi": "^0.1.0"
@@ -15,8 +34,4 @@
     "should": "^7.1.0",
     "supertest": "^1.0.0"
   },
-  "scripts": {
-    "start": "node app.js",
-    "test": "swagger project test"
-  }
 }
