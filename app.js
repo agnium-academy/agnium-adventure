@@ -1,8 +1,15 @@
 'use strict';
 
-var SwaggerHapi = require('swagger-hapi');
-var Hapi = require('hapi');
-var app = new Hapi.Server();
+// Require all node modules
+const SwaggerHapi = require('swagger-hapi');
+const Path  = require('path')
+const Hapi  = require('hapi');
+const Hoek  = require('hoek')
+const Inert = require('inert')
+const Joi   = require('joi')
+
+// Create the app server
+const app   = new Hapi.Server();
 
 module.exports = app; // for testing
 
@@ -10,6 +17,7 @@ var config = {
   appRoot: __dirname // required config
 };
 
+// Create Swagger Hapi
 SwaggerHapi.create(config, function(err, swaggerHapi) {
   if (err) { throw err; }
 
@@ -28,3 +36,6 @@ SwaggerHapi.create(config, function(err, swaggerHapi) {
     });
   });
 });
+
+// Register Hapi plugins
+app.register(Inert, () => {})
