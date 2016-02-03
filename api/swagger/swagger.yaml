@@ -7,7 +7,7 @@ info:
 host: localhost:10010
 
 # basePath prefixes all resource paths 
-basePath: /
+basePath: /api
 
 # 
 schemes:
