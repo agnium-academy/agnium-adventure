@@ -24,6 +24,13 @@ List of adventurer routes:
 | /api/adventurers/:id | PUT       | Update an adventurer with new info
 | /api/adventurers/:id | DELETE    | Delete an adventurer
 
+List of filter routes:
+
+| Route                           | HTTP Verb | Description
+|---------------------------------|-----------|--------------------------------
+| /api/adventurers?name="{name}"  | GET       | Get {name} match in adventurers
+| /api/adventurers?name="{na}"    | GET       | Get {na} like in adventurers
+
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 Usage
